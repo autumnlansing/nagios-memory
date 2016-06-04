@@ -26,10 +26,10 @@
 use strict;
 use warnings;
 
-use Nagios::Plugin;
-use Nagios::Plugin::Threshold;
+use Monitoring::Plugin;
+use Monitoring::Plugin::Threshold;
 
-my $np = Nagios::Plugin->new(
+my $np = Monitoring::Plugin->new(
     usage     => "Usage: %s [-w|--warning=<percent> ] [ -c|--critical=<percent> ]",
     shortname => 'MEMORY',
 );
